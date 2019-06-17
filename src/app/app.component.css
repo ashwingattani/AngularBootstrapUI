@@ -1,0 +1,17 @@
+.mainDiv {
+    width: 100%;
+    margin-left: 0px;
+}
+.row.header {
+    height: 100px;
+}
+.row.content {
+    height: 100%;
+    margin-bottom: 10px;
+}
+.gray-div {
+    background-color: #EFF2F7;
+}
+.white-div {
+    background-color: #FFFFFF;
+}
