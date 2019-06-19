@@ -8,32 +8,14 @@
     </div>
   </div>
   <div class="row content">
-    <div class="col-2 white-div">
-      <table class="table">
+    <div class="col-2 blue-div">
+      <table class="table menu">
         <tbody>
-          <!-- <tr> -->
-            <td scope="row">1</td>
-          <!-- </tr> -->
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
-          </tr>
-          <tr>
-            <td scope="row">1</td>
+          <tr *ngFor="let item of dataSet; index as i">
+            <td scope="row" id="{{i}}" (click)="menuItemSelected($event.currentTarget.id)">
+              <img class="menuIcon" src="{{item.src}}" alt="{{item.name}}">
+              <span class="align-middle text-center">{{item.name}}</span>
+            </td>
           </tr>
         </tbody>
       </table>
