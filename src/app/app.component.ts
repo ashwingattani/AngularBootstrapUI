@@ -28,4 +28,9 @@ export class AppComponent {
 
     this.previousSelectedMenuId = id;
   }
+
+  logoutClicked() {
+    console.log("Logout Clicked");
+    
+  }
 }
