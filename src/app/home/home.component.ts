@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeLocation(value) {
+  changeCamera(value) {
       console.log(value);
-      
+      this.cameraPlaceHolder = value
   }
 
 }
