@@ -31,7 +31,11 @@ export class AppComponent {
       (<HTMLImageElement>document.getElementById("img"+this.previousSelectedMenuId)).src = this.menuItems[this.previousSelectedMenuId]["src"];
     }
 
-    this.previousSelectedMenuId = id;
+    if (this.previousSelectedMenuId == id) {
+      this.previousSelectedMenuId = "-1";
+    } else {
+      this.previousSelectedMenuId = id;
+    }
   }
 
   logoutClicked() {
@@ -40,6 +44,10 @@ export class AppComponent {
   }
 
   getHealthIcon(id: string) {
-    return "../assets/GoodHealth.png"
+    if (id == "1") {
+      return "../assets/BadHealth.png"
+    } else {
+      return "../assets/GoodHealth.png"
+    }
   }
 }
