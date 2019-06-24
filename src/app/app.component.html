@@ -17,17 +17,26 @@
     <div class="col-2 blue-div">
       <table class="table menu">
         <tbody>
-          <tr *ngFor="let item of dataSet; index as i">
-            <td scope="row" id="{{i}}" (click)="menuItemSelected($event.currentTarget.id)">
-              <img class="menuIcon" src="{{item.src}}" alt="{{item.name}}">
+          <tr *ngFor="let item of menuItems; index as i">
+            <td class="menuItem" scope="row" id="{{i}}" (click)="menuItemSelected($event.currentTarget.id)">
+              <img id="img{{i}}" class="menuIcon" src="{{item.src}}" alt="{{item.name}}">
               <span class="align-middle text-center">{{item.name}}</span>
             </td>
           </tr>
-
         </tbody>
       </table>
       <div class="health-div">
-        <span class="align-middle text-center health-title">Health Monitor</span>
+        <span class="health-title">Health Monitor</span>
+        <table class="table menu">
+            <tbody>
+              <tr *ngFor="let item of healthItems; index as i">
+                <td class="healthItem" scope="row" id="{{i}}">
+                  <span class="float-left">{{item}}</span>
+                  <img id="img{{i}}" class="healthIcon float-right" src='../assets/GoodHealth.png' alt="">
+                </td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
     <div class="col gray-div">
