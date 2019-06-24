@@ -1,0 +1,78 @@
+.mainDiv {
+    color: greenyellow;
+    margin-top: 25px;
+    padding-right: 50px;
+}
+
+.categoryDiv {
+    height: 113px;
+    background: yellow;
+    /* margin-top: 25px; */
+}
+
+.subCategoryHeader {
+    height: 113px;
+} 
+
+.entryIconDiv {
+    background: rgb(0, 193, 149);
+}
+
+.exitIconDiv {
+    background: green;
+    background: rgb(248, 83, 99);
+
+}
+
+.unregisteredIconDiv {
+    background: green;
+    background: rgb(0, 194, 207);
+
+}
+
+.alertIconDiv {
+    background: green;
+    background: rgb(64, 191, 232);
+
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.categoryTitleDiv {
+    background:white;
+    color: black;
+}
+
+.titleDiv {
+    margin-top: 30px;
+}
+
+.cameraDiv{
+    background: yellow;
+}
+
+.listDiv {
+    background: yellow;
+}
+
+
+.dropDownInputBoxField {
+    margin-left: 30px; 
+    font-size: 15px;
+    width: 90px;
+    height: 25px;
+    border: 0.5px;
+    border-radius: 4px;
+    padding: 0px;
+    color:black;
+    background: none;
+    border: 1px solid rgba(172, 172, 172, 1);
+}

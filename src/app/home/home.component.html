@@ -1,3 +1,99 @@
-<p>
-  home works!
-</p>
+<div class="container mainDiv">
+    <div class="row categoryDiv">
+     
+      <div class="col-md-3">
+          <div class="row subCategoryHeader">
+
+              <div class="col-md-4 entryIconDiv">
+                  <img class="icon" src="../assets/Entry.png" alt="Entry">
+              </div>
+    
+              <div class="col text-center categoryTitleDiv">
+                 <div class="titleDiv">
+                    <span>ENTRY</span>
+                    <br>
+                    <h3>100</h3>
+                 </div>
+              </div>
+
+          </div> 
+      </div>
+
+       <div class="col-md-3">
+          <div class="row subCategoryHeader">
+
+              <div class="col-md-4 exitIconDiv">
+                  <img class="icon" src="../assets/Exit.png" alt="Entry">
+
+              </div>
+    
+          
+
+              <div class="col text-center categoryTitleDiv">
+                  <div class="titleDiv">
+                     <span>EXIT</span>
+                     <br>
+                     <h3>24</h3>
+                  </div>
+               </div>
+
+          </div> 
+       </div>
+
+       <div class="col-md-3">
+          <div class="row subCategoryHeader">
+
+              <div class="col-md-4 unregisteredIconDiv">
+                  <img class="icon" src="../assets/UnRegistered.png" alt="Entry">
+
+              </div>
+    
+              <div class="col text-center categoryTitleDiv">
+                  <div class="titleDiv">
+                     <span>EXIT</span>
+                     <br>
+                     <h3>24</h3>
+                  </div>
+               </div>
+
+          </div> 
+        </div>
+
+        <div class="col-md-3">
+            <div class="row subCategoryHeader">
+
+                <div class="col-md-4 alertIconDiv">
+                    <img class="icon" src="../assets/Alert.png" alt="Entry">
+                  </div>
+      
+                  <div class="col text-center categoryTitleDiv">
+                      <div class="titleDiv">
+                         <span>ALERTS</span>
+                         <br>
+                         <h3>09</h3>
+                      </div>
+                  </div>
+  
+            </div> 
+        </div>
+    </div>
+
+    <div class="row DetailDiv">
+        <div class="col-md-4 cameraDiv">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle dropDownInputBoxField" type="button" data-toggle="dropdown">
+                  {{ cameraPlaceHolder }}
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li *ngFor="let value of cameraList" (click) = "changeCamera(value)">     
+                      {{ value }}
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col listDiv">
+sadgsadgsdagsa
+        </div>
+    </div>
+
+</div>
