@@ -65,16 +65,67 @@
 .detailDiv {
     margin-top: 15px;
 }
-.cameraDiv{
+/* .cameraDiv{
 
+}*/
+
+/* .listDiv {
+    background: red;
+}  */
+
+.liveTextDiv {
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background: red;
+    border-radius: 7px;
+    width: 35px;
+    height: 20px;
+    text-align: center
 }
 
-.listDiv {
-
+.live {
+    font-size: 15px;
+    color: white;
 }
 
+
+.liveVehicleTextDiv {
+    position: absolute;
+    top: 195px;
+    right: 16px;
+    background: white;
+    border-radius: 7px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    
+}
+
+.livevehicleNo {
+    font-size: 15px;
+    color: grey
+}
+
+.liveVehicleTimeDiv {
+    position: absolute;
+    top: 280px;
+    left: 16px; 
+    background: white;
+    border-radius: 7px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+
+.livevehicleTime {
+    font-size: 15px;
+    color: grey
+}
+
+  
 .itemRow {
-    background-color: white;
+    background-color:white;
     border-top: 0px;
     border-radius: 10px;
     overflow: hidden;
