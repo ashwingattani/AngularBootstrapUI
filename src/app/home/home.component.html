@@ -1,9 +1,9 @@
 <div class="container-fluid mainDiv">
   <div class="row categoryDiv">
-    <div class="col-md-3" *ngFor="let item of headerItems">
+    <div class="col-md-3" *ngFor="let item of headerItems ">
       <div class="row subCategoryHeader">
 
-        <div class="col-md-4" [ngStyle]="{'background-color': item.color }">
+        <div class="col-md-4 categoryHolder">
           <img class="categoryicon" src="{{item.src}}" alt="">
         </div>
 
