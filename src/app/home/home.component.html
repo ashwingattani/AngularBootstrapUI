@@ -1,5 +1,6 @@
 <div class="container-fluid mainDiv">
   <div class="row categoryDiv">
+    
     <div class="col-md-3" *ngFor="let item of headerItems">
       <div class="row subCategoryHeader">
 
@@ -17,6 +18,8 @@
 
       </div>
     </div>
+
+
   </div>
 
   <div class="row detailDiv">
@@ -37,16 +40,30 @@
 
       <div class="row liveVideoDiv">
         <img class="liveImageIcon" src="../assets/car.jpg" alt="Live Video">
+        <div class="liveTextDiv">
+               <span class="live">Live</span> 
+        </div>
+
       </div>
 
       <div class="row liveVehicleImageDiv">
         <img class="liveImageIcon" src="../assets/car.jpg" alt="Live Image">
+        <div class="liveVehicleTextDiv">
+            <span class="livevehicleNo">MF12DE1234</span> 
+        </div>
+
+        <div class="liveVehicleTimeDiv">
+            <span class="livevehicleTime">9:30 AM</span> 
+        </div>
+
       </div>
     </div>
 
     <div class="col listDiv">
-        <table class="table itemRow">
+        
+      <table class="table itemRow"  *ngFor="let item of headerItems">
             <tbody>
+
               <tr>
                 <td>1</td>
                 <td>
@@ -75,36 +92,11 @@
                   </div>
                 </td>
               </tr>
-              <tr style="margin-top: 50px;">
-                <td>1</td>
-                <td>
-                  <div>
-                    <span class="itemTitle">LP Image & Text</span>
-                    <div>
-                      <img class="col-6 itemImage" src="../assets/Entry.png" alt="">
-                      <span class="itemDetail">MH12DE1433</span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <span class="itemTitle">Date & Time</span>
-                    <div>
-                      <span class="itemDetail">1 April 2019, 9:30 AM</span>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <span class="itemTitle">Entry/Exit</span>
-                    <div>
-                      <span class="itemDetail">Entry</span>
-                    </div>
-                  </div>
-                </td>
-              </tr>
+
             </tbody>
           </table>
+
+
     </div>
   </div>
 </div>
